@@ -3,12 +3,12 @@ name: default
 
 steps:
 - name: version
-  image: python3
+  image: python
   commands:
   - python3 --version
  
 - name: pip install
-  image: python3
+  image: python
   commands:
   - pip install -r requirements.txt
   - pytest
