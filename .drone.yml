@@ -1,0 +1,14 @@
+kind: pipeline
+name: default
+
+steps:
+- name: version
+  image: python3
+  commands:
+  - python3 --version
+ 
+- name: pip install
+  image: python3
+  commands:
+  - pip install -r requirements.txt
+  - pytest
